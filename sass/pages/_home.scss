@@ -1,0 +1,38 @@
+.section-about {
+  padding: 9.6rem 0;
+  background-color: $color-grey-light-1;
+  .container-about {
+    max-width: 130rem;
+    margin: 0.8rem auto;
+    padding: 0 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 9.6rem;
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+    }
+
+    &__description {
+      font-size: 1.8rem;
+      padding: 6.4rem;
+    }
+  }
+}
+
+.section-form {
+  padding: 15rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}

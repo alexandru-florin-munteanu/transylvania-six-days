@@ -1,0 +1,55 @@
+.main-btn,
+.main-btn:link,
+.main-btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  margin-right: 2.4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  background-color: $color-primary;
+  color: $color-white;
+  transition: all 0.2s ease-in;
+  backface-visibility: hidden;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    background-color: $color-primary;
+  }
+
+  &:active,
+  &:hover {
+    color: $color-black;
+    background-color: $color-white;
+  }
+}
+
+.secondary-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 1.8rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  background-color: transparent;
+  outline: 1px solid $color-white;
+  color: $color-white;
+  transition: all 0.2s ease-in;
+  backface-visibility: hidden;
+
+  &::after {
+    background-color: $color-white;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary-dark;
+    outline: 1px solid $color-primary-dark;
+  }
+}
