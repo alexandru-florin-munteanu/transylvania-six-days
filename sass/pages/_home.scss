@@ -15,13 +15,26 @@
       justify-content: space-between;
       align-items: center;
       flex: 1;
+      gap: 8rem;
     }
 
     &__description {
-      font-size: 1.8rem;
       padding: 6.4rem;
+
+      &__paragraph {
+        font-size: 1.8rem;
+        line-height: 1.8;
+      }
     }
   }
+}
+
+.section-about-race {
+  padding: 8rem 6.4rem;
+  display: flex;
+  gap: 8rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .section-form {

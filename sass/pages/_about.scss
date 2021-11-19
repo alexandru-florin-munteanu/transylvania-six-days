@@ -1,0 +1,59 @@
+.about-rules {
+  &__heading {
+    margin-left: 4.8rem;
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16rem;
+
+    &__one {
+      align-self: flex-start;
+    }
+    &__two {
+      align-self: flex-end;
+    }
+  }
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+
+    &__rules {
+      padding: 2.4rem;
+      &__group {
+        margin: 2.4rem;
+        padding: 1.2rem;
+        border: 2px solid $color-primary;
+        border-radius: 8px;
+        &__heading {
+          margin-bottom: 1.2rem;
+          font-size: 2.4rem;
+          background: linear-gradient(
+            to right,
+            $color-primary-light,
+            $color-primary-dark
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          text-transform: uppercase;
+          letter-spacing: 0.8rem;
+          display: inline-block;
+          border-bottom: 2px solid $color-primary;
+        }
+
+        &__rule {
+          margin: 1.2rem 0.8rem;
+          font-weight: 700;
+          padding: 0.8rem;
+        }
+      }
+
+      & button {
+        transform: translateX(100%);
+      }
+    }
+  }
+}

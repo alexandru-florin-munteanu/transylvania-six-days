@@ -1,6 +1,6 @@
 .header {
   padding-top: 3.2rem;
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-black, 0.6),
@@ -15,7 +15,7 @@
 .hero {
   position: absolute;
   top: 40%;
-  left: 25%;
+  left: 30%;
   transform: translateX(-50%);
 
   &__text {
@@ -27,5 +27,25 @@
     font-size: 4.4rem;
     text-transform: uppercase;
     letter-spacing: 0.8rem;
+  }
+
+  &__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    & svg {
+      position: relative;
+      display: block;
+      width: calc(135% + 1.3px);
+      height: 96px;
+      transform: rotateY(180deg);
+    }
+    & .shape-fill {
+      fill: $color-grey-light-1;
+    }
   }
 }

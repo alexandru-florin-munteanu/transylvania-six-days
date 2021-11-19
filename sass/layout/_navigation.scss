@@ -35,6 +35,20 @@
     font-weight: bold;
   }
 
+  &__img-box {
+    height: 6.4rem;
+    width: 6.4rem;
+
+    & .main-logo {
+      display: inline-block;
+      height: 6.4rem;
+      width: 9.6rem;
+      margin-left: 2.4rem;
+
+      transform: rotate(180deg);
+    }
+  }
+
   &__link:link.main-link:hover,
   &__link:visited.main-link:active {
     color: $color-grey-dark-3;

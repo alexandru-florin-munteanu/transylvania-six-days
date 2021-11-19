@@ -25,6 +25,8 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: $color-grey-light-1;
+  overflow-x: hidden;
   @include respond(tab-port) {
     //width < 900 ?
     padding: 0;

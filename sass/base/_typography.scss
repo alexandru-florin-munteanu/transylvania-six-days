@@ -6,8 +6,13 @@ body {
   color: $color-grey-dark;
 }
 
+.heading-primary {
+  font-size: 3rem;
+  word-spacing: 0.8rem;
+}
+
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -38,4 +43,83 @@ body {
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.heading-highlight {
+  &--primary {
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    padding: 1.2rem 0.8rem;
+    border-radius: 3px;
+
+    box-shadow: 0.3rem 0.2rem 0.3rem rgba($color-black, $alpha: 0.4);
+  }
+
+  &--secondary {
+    background-image: linear-gradient(
+      to right,
+      $color-secondary-light,
+      $color-secondary-dark
+    );
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    padding: 1.2rem 0.8rem;
+    border-radius: 3px;
+
+    box-shadow: 0.3rem 0.2rem 0.3rem rgba($color-black, $alpha: 0.4);
+  }
+
+  &--tertiary {
+    background-image: linear-gradient(
+      to right,
+      $color-tertiary-light,
+      $color-tertiary-dark
+    );
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    padding: 1.2rem 0.8rem;
+    border-radius: 3px;
+
+    box-shadow: 0.3rem 0.2rem 0.3rem rgba($color-black, $alpha: 0.4);
+  }
+}
+
+.about-race {
+  font-size: 1.8rem;
+  margin: 4.8rem 4.8rem 2.4rem 1.6rem;
+  line-height: 2;
+
+  &__time {
+    margin-bottom: 3.2rem;
+    &__hour {
+      margin-right: 1.6rem;
+      padding: 1.2rem 1.2rem;
+      background-image: linear-gradient(
+        to right,
+        $color-primary-light,
+        $color-primary-dark
+      );
+      border-radius: 8px;
+      color: $color-grey-light-1;
+      box-shadow: 0.2rem 0.1rem 0.2rem rgba($color-black, $alpha: 0.4);
+    }
+  }
+
+  &__description {
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+
+  &__faded {
+    color: $color-grey-dark-2;
+    font-size: 1.4rem;
+  }
 }
