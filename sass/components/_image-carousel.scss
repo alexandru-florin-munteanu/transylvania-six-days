@@ -1,0 +1,46 @@
+.carousel {
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba($color-black, $alpha: 0.3);
+  height: 64rem;
+  width: 48rem;
+  overflow: hidden;
+
+  &__image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    & img {
+      display: inline-block;
+      height: 64rem;
+      width: 48rem;
+    }
+  }
+
+  &__buttons-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    border: none;
+    padding: 1.2rem;
+    cursor: pointer;
+    width: 49.5%;
+    height: 100%;
+
+    &:hover,
+    &:active {
+      opacity: 0.85;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  & img {
+    width: 48rem;
+    height: 60rem;
+    object-fit: cover;
+  }
+}

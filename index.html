@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/7f50c221f8.js"
@@ -18,53 +22,111 @@
     <title>Transylvania six days</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="navigation">
-        <div class="navigation__img-box">
-          <img src="img/logo-white.png" alt="main logo" class="main-logo" />
-        </div>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon"> </span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li><a href="#home" class="navigation__link">Home</a></li>
-          <li><a href="#about" class="navigation__link">About</a></li>
-          <li>
-            <a href="#register" class="navigation__link main-link">Register</a>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"> <span>01</span> Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section--1" class="navigation__link">
+              <span>02</span>Track
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section--2" class="navigation__link">
+              <span>03</span>Rules</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#section--3" class="navigation__link">
+              <span>04</span>Participants</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              <span>05</span>Visit Reghin & Transylvania</a
+            >
+          </li>
+
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              <span>06</span>Organisers, Partners and Sponsors</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"> <span>07</span>Contact</a>
           </li>
         </ul>
       </nav>
-      <div class="hero">
-        <p class="hero__text u-margin-bottom-small">
+    </div>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="./img/logo-white.png" alt="Logo" class="header__logo" />
+      </div>
+      <div class="header__text-box">
+        <p class="header__text u-margin-bottom-small">
           <span class="h-color"> 18 June</span> Transylvania, Romania
         </p>
-        <h1 class="hero__heading heading-primary u-margin-bottom-small">
+        <h1 class="header__heading heading-primary u-margin-bottom-small">
           <span class="h-color">Transylvania 6</span> Days
         </h1>
-        <p class="hero__text u-margin-bottom-medium">Bike marathon</p>
+        <p class="header__text u-margin-bottom-medium">Marathon</p>
 
         <a href="#" class="main-btn">Join Us</a>
         <a href="#" class="secondary-btn">Learn More</a>
-        
       </div>
-      <div class="hero__wave">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-      </svg>
-    </div>
+      <div class="header__wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
     </header>
     <main>
-      <section class="section-about" id="about">
+      <section class="section-about" id="section--1">
         <div class="container-about">
           <div class="container-about__text">
             <div class="container-about__img">
-              <img src="./img/about-1.jpg" alt="Team working" />
+              <img src="./img/race-track-markup.png" alt="Team working" />
             </div>
             <div class="container-about__description">
-              <h3 class="heading-tertiary u-margin-bottom-medium">
-                About
-              </h3>
-              <h2 class="heading-secondary h-color u-margin-bottom-medium">Epic run in the heart of <span class="heading-highlight--primary"> Transylvania </span></h2>
-              <p class="container-about__description__paragraph u-margin-bottom-small">
+              <h3 class="heading-tertiary u-margin-bottom-medium">Track</h3>
+              <h2 class="heading-secondary h-color u-margin-bottom-medium">
+                Epic run in the heart of
+                <span class="heading-highlight--primary"> Transylvania </span>
+              </h2>
+              <p
+                class="
+                  container-about__description__paragraph
+                  u-margin-bottom-small
+                "
+              >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
                 ea porro accusamus quas voluptatem optio, odio delectus
                 distinctio hic, totam tempora eos culpa mollitia asperiores? Id
@@ -83,34 +145,11 @@
         </div>
       </section>
 
-
-
-      <section class="section-about-race">
-        <div class="section-about-race__description">
-       <h3 class="heading-tertiary u-margin-bottom-medium">
-          About &dash; Race
-       </h3>
-       <h2 class="heading-secondary u-margin-bottom-medium">
-        <span class="heading-highlight--primary"> Event Schedule </span> 
-       </h2>
-       <div class="about-race">
-        <p class="about-race__time"> <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>   day of marathon Packet Meet - up at venue</p>
-        <p class="about-race__time"> <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>   day of marathon participants meeting</p>
-        <p class="about-race__time"> <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>   day of marathon Packet Meet - up at venue</p>
-        <p class="about-race__time"> <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>   day of marathon Packet Pick- up at venue</p>
-        <p class="about-race__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error praesentium repellendus delectus eveniet, eos voluptatum accusamus voluptas numquam quam veritatis velit alias ad sequi?</p>
-        <p class="about-race__faded">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate ea ratione cum atque beatae sunt?</p>
-        <p class="about-race__faded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis in pariatur unde totam cupiditate ab accusantium quis adipisci. Rerum, beatae.</p>
-       </div>
-      </div>
-      <div class="section-about-race__image">
-        <img src="./img/about--2.jfif" alt="">
-      </div>
-      </section>
-  
       <section class="about-rules" id="section--2">
         <div class="about-rules__title">
-          <h2 class="about-rules__description heading-highlight--primary">Event Rules</h2>
+          <h2 class="about-rules__description heading-highlight--primary">
+            Event Rules
+          </h2>
           <h3 class="about-rules__header">
             Regulations and compliances for the event!
           </h3>
@@ -118,13 +157,16 @@
 
         <div class="rules">
           <div class="rules__tab-container">
-            <button class="main-btn rules__tab rules__tab--1 rules__tab--active" data-tab= "1">
+            <button
+              class="main-btn rules__tab rules__tab--1 rules__tab--active"
+              data-tab="1"
+            >
               <span>01</span>Race age
             </button>
-            <button class="main-btn rules__tab rules__tab--2" data-tab= "2">
+            <button class="main-btn rules__tab rules__tab--2" data-tab="2">
               <span>02</span> Start
             </button>
-            <button class="main-btn rules__tab rules__tab--3" data-tab= "3">
+            <button class="main-btn rules__tab rules__tab--3" data-tab="3">
               <span>03</span> General Rules and Etiquette
             </button>
           </div>
@@ -139,9 +181,19 @@
               Age limits information
             </h5>
             <p>1. No one under the age of 14 may race</p>
-            <p>2. To qualify to race we prefer you have done a race at least 10 miles in length in the past and you have pre-riden the course and provided proof.</p>
-            <p>3. Racers between 14 -16 must submit a resume and proof of successful pre-ride</p>
-            <p> ALL JR racers MUST submit a signed waiver from a parent no less than 2 weeks prior to race day.</p>
+            <p>
+              2. To qualify to race we prefer you have done a race at least 10
+              miles in length in the past and you have pre-riden the course and
+              provided proof.
+            </p>
+            <p>
+              3. Racers between 14 -16 must submit a resume and proof of
+              successful pre-ride
+            </p>
+            <p>
+              ALL JR racers MUST submit a signed waiver from a parent no less
+              than 2 weeks prior to race day.
+            </p>
           </div>
           <div class="rules__content rules__content--2">
             <div class="rules__icon rules__icon--2">
@@ -150,11 +202,18 @@
               </svg>
             </div>
             <h5 class="rules__header heading-highlight--primary">
-              General start info 
+              General start info
             </h5>
-            <p>  All racers under 18 must have a chaperon on site watching out for their racing progress.Ages are determined by the racers age on race day.</p>
-            <p>Starting times will be staggered. See schedule.  We use a gun start, and if you jump the gun you can be dnf’d or penalized the difference + 2 min. Jumping the gun is cheating</p>
-            
+            <p>
+              All racers under 18 must have a chaperon on site watching out for
+              their racing progress.Ages are determined by the racers age on
+              race day.
+            </p>
+            <p>
+              Starting times will be staggered. See schedule. We use a gun
+              start, and if you jump the gun you can be dnf’d or penalized the
+              difference + 2 min. Jumping the gun is cheating
+            </p>
           </div>
           <div class="rules__content rules__content--3">
             <div class="rules__icon rules__icon--3">
@@ -165,43 +224,240 @@
             <h5 class="rules__header heading-highlight--tertiary">
               General event rules
             </h5>
-            <p>1. Be responsible for your belongings and don’t throw trash on the trail.</p>
-              <p>2. Be nice to your fellow racers, always announce when you are passing and make sure they have a safe place to pull over, especially in the technical parts.</p>
-              <p>3. No short-cutting the course</p>
-              <p>4. Remember the desert is a fragile place, try to only pass when there is room, try to wait for a wide spot in the trail and try not to create unnecessary widening of our single track.</p>
-              <p>5. If you need to stop and take a break make sure you are well off course in a hardened area.</p>
+            <p>
+              1. Be responsible for your belongings and don’t throw trash on the
+              trail.
+            </p>
+            <p>
+              2. Be nice to your fellow racers, always announce when you are
+              passing and make sure they have a safe place to pull over,
+              especially in the technical parts.
+            </p>
+            <p>3. No short-cutting the course</p>
+            <p>
+              4. Remember the desert is a fragile place, try to only pass when
+              there is room, try to wait for a wide spot in the trail and try
+              not to create unnecessary widening of our single track.
+            </p>
+            <p>
+              5. If you need to stop and take a break make sure you are well off
+              course in a hardened area.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            
+      <section class="section__switcher">
+        <div class="switcher-container">
+          <div class="left-switch">
+            <div style="background-color: #7ed56f">
+              <h1>Race Track</h1>
+              <p>The full map of the track</p>
+            </div>
+            <div style="background-color: #ffb900">
+              <h1>F.A.Q.</h1>
+              <p>Most frequently asked questions</p>
+            </div>
+            <div style="background-color: #2998ff">
+              <h1>Participants</h1>
+              <p>Official line-up</p>
+            </div>
+          </div>
+          <div class="right-switch">
+            <div
+              style="
+                background-image: url(img/andrea-leopardi-QVD3Xht9txA-unsplash.jpg);
+              "
+            >
+              &nbsp;
+            </div>
+            <div
+              style="
+                background-image: url(img/braden-collum-9HI8UJMSdZA-unsplash.jpg);
+              "
+            >
+              &nbsp;
+            </div>
+            <div
+              style="
+                background-image: url(img//isaac-wendland-7DCZgKyp8vw-unsplash.jpg);
+              "
+            >
+              &nbsp;
+            </div>
+          </div>
+          <div class="action-buttons">
+            <button class="switcher-container__button down-button">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="switcher-container__button up-button">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about-race">
+        <div class="section-about-race__description">
+          <h3 class="heading-tertiary u-margin-bottom-medium">Visit</h3>
+          <h2 class="heading-secondary u-margin-bottom-medium">
+            <span class="heading-highlight--primary"> Transylvania </span>
+          </h2>
+          <div class="about-race">
+            <p class="about-race__time">
+              <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>
+              day of marathon Packet Meet - up at venue
+            </p>
+            <p class="about-race__time">
+              <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>
+              day of marathon participants meeting
+            </p>
+            <p class="about-race__time">
+              <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>
+              day of marathon Packet Meet - up at venue
+            </p>
+            <p class="about-race__time">
+              <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>
+              day of marathon Packet Pick- up at venue
+            </p>
+            <p class="about-race__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              praesentium repellendus delectus eveniet, eos voluptatum accusamus
+              voluptas numquam quam veritatis velit alias ad sequi?
+            </p>
+            <p class="about-race__faded">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptate ea ratione cum atque beatae sunt?
+            </p>
+            <p class="about-race__faded">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis in pariatur unde totam cupiditate ab accusantium quis
+              adipisci. Rerum, beatae.
+            </p>
+          </div>
+        </div>
+        <div class="section-about-race__image">
+          <div class="carousel">
+            <div class="carousel__image-container" id="imgs">
+              <img src="img/visit-transylvania-1.jpg" alt="first-image" />
+              <img src="img/visit-transylvania-2.jpg" alt="second-image" />
+              <img src="img/visit-transylvania-3.jpg" alt="third-image" />
+            </div>
+            <div class="carousel__buttons-container">
+              <button id="left" class="carousel__btn">Prev</button>
+              <button id="right" class="carousel__btn">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about-race">
+        <div class="section-about-race__image">
+          <div class="carousel">
+            <div class="carousel__image-container" id="imgs2">
+              <img src="img/visit-reghin-1.jfif" alt="first-image" />
+              <img src="img/visit-reghin-2.jpg" alt="second-image" />
+              <img src="img/visit-reghin-3.jpg" alt="third-image" />
+            </div>
+            <div class="carousel__buttons-container">
+              <button id="left2" class="carousel__btn">Prev</button>
+              <button id="right2" class="carousel__btn">Next</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-about-race__description">
+          <h3 class="heading-tertiary u-margin-bottom-medium">Visit</h3>
+          <h2 class="heading-secondary u-margin-bottom-medium">
+            <span class="heading-highlight--primary"> Reghin </span>
+          </h2>
+          <div class="about-race">
+            <p class="about-race__time">
+              <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>
+              day of marathon Packet Meet - up at venue
+            </p>
+            <p class="about-race__time">
+              <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>
+              day of marathon participants meeting
+            </p>
+            <p class="about-race__time">
+              <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>
+              day of marathon Packet Meet - up at venue
+            </p>
+            <p class="about-race__time">
+              <span class="about-race__time__hour">6:30 &dash; 8:45 am</span>
+              day of marathon Packet Pick- up at venue
+            </p>
+            <p class="about-race__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              praesentium repellendus delectus eveniet, eos voluptatum accusamus
+              voluptas numquam quam veritatis velit alias ad sequi?
+            </p>
+            <p class="about-race__faded">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptate ea ratione cum atque beatae sunt?
+            </p>
+            <p class="about-race__faded">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis in pariatur unde totam cupiditate ab accusantium quis
+              adipisci. Rerum, beatae.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured">As featured in</h2>
+          <div class="featured">
+            <img src="./img/business-insider.png" alt="business insider logo" />
+            <img src="./img/forbes.png" alt="forbes logo" />
+            <img src="./img/techcrunch.png" alt="Tech Crunch logo" />
+            <img
+              src="./img/the-new-york-times.png"
+              alt="The New York Times logo"
+            />
+            <img src="./img/usa-today.png" alt="Usa Today logo" />
           </div>
         </div>
       </section>
 
       <section class="section-testimonials" id="section--3">
         <div class="section-testimonials__title">
-          <h2 class="section__description heading-highlight--primary u-margin-bottom-small">
+          <h2
+            class="
+              section__description
+              heading-highlight--primary
+              u-margin-bottom-small
+            "
+          >
             Breath of the wild
           </h2>
-          <h3 class="section__header">
-            Our community
-          </h3>
+          <h3 class="section__header">Our community</h3>
         </div>
 
         <div class="slider">
           <div class="slide slide--1">
             <div class="testimonial">
               <figure class="testimonial__shape">
-                <img src="img/user-1.jpg" 
-                class="testimonial__image"
-                alt="First Testimonial">
-                <figcaption class="testimonial__caption">Angelo Bavari</figcaption>
+                <img
+                  src="img/user-1.jpg"
+                  class="testimonial__image"
+                  alt="First Testimonial"
+                />
+                <figcaption class="testimonial__caption">
+                  Angelo Bavari
+                </figcaption>
               </figure>
               <div class="testimonial__text">
-                <h3 class="heading-tertiary">I had the best run ever with my family !</h3>
+                <h3 class="heading-tertiary">
+                  I had the best run ever with my family !
+                </h3>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Tempore fugit explicabo facilis nisi voluptas neque aliquid
-                  praesentium ut quo vero! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Inventore, assumenda.
+                  praesentium ut quo vero! Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Inventore, assumenda.
                 </p>
               </div>
             </div>
@@ -210,18 +466,22 @@
           <div class="slide slide--2">
             <div class="testimonial">
               <figure class="testimonial__shape">
-                <img src="img/user-2.jpg" 
-                class="testimonial__image"
-                alt="First Testimonial">
-                <figcaption class="testimonial__caption">Crenguta Zbantureanu</figcaption>
+                <img
+                  src="img/user-2.jpg"
+                  class="testimonial__image"
+                  alt="First Testimonial"
+                />
+                <figcaption class="testimonial__caption">
+                  Crenguta Zbantureanu
+                </figcaption>
               </figure>
               <div class="testimonial__text">
                 <h3 class="heading-tertiary">N-o sa mai vin niciodata!</h3>
                 <p>
-                  Numa' maine nu-i poimaine adipisicing elit.
-                  Tempore fugit explicabo facilis nisi voluptas neque aliquid
-                  praesentium ut quo vero! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Inventore, assumenda.
+                  Numa' maine nu-i poimaine adipisicing elit. Tempore fugit
+                  explicabo facilis nisi voluptas neque aliquid praesentium ut
+                  quo vero! Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Inventore, assumenda.
                 </p>
               </div>
             </div>
@@ -230,242 +490,328 @@
           <div class="slide slide--3">
             <div class="testimonial">
               <figure class="testimonial__shape">
-                <img src="img/user-3.jpg" 
-                class="testimonial__image"
-                alt="First Testimonial">
-                <figcaption class="testimonial__caption">Ion Talpa-Iute</figcaption>
+                <img
+                  src="img/user-3.jpg"
+                  class="testimonial__image"
+                  alt="First Testimonial"
+                />
+                <figcaption class="testimonial__caption">
+                  Ion Talpa-Iute
+                </figcaption>
               </figure>
               <div class="testimonial__text">
                 <h3 class="heading-tertiary">Nici eu!</h3>
                 <p>
-                  Numa' maine nu-i poimaine adipisicing elit.
-                  Tempore fugit explicabo facilis nisi voluptas neque aliquid
-                  praesentium ut quo vero! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Inventore, assumenda.
+                  Numa' maine nu-i poimaine adipisicing elit. Tempore fugit
+                  explicabo facilis nisi voluptas neque aliquid praesentium ut
+                  quo vero! Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Inventore, assumenda.
                 </p>
               </div>
             </div>
           </div>
-          
+
           <button class="slider__btn slider__btn--left">&larr;</button>
-        <button class="slider__btn slider__btn--right">&rarr;</button>
-        <div class="dots"></div>
-
-
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
         </div>
       </section>
 
       <section class="section-form">
         <div class="form-container">
-            <form action="#" class="form">
-              <div class="u-margin-bottom-medium">
-                <h2 class="heading-secondary">Register now</h2>
-              </div>
-              <div class="form__group">
-                <label for="name" class="form__label">First name</label>
+          <form action="#" class="form">
+            <div class="u-margin-bottom-medium">
+              <h2 class="heading-secondary">Register now</h2>
+            </div>
+            <div class="form__group">
+              <label for="name" class="form__label">First name</label>
+              <input
+                type="text"
+                id="name"
+                class="form__input"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="name" class="form__label">Last name</label>
+              <input
+                type="text"
+                id="name"
+                class="form__input"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label"> Email address</label>
+              <input
+                type="email"
+                id="email"
+                class="form__input"
+                placeholder="Email address"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="phone" class="form__label"> Phone-number </label>
+              <input
+                type="text"
+                id="phone"
+                class="form__input"
+                placeholder="### ### ####"
+                required
+              />
+            </div>
+
+            <div class="form__group">
+              <div class="form__radio-group">
+                <label for="gender" class="form__radio-label">
+                  <span class="form__radio-button"></span>
+                  Gender</label
+                >
+
+                <label for="gender" class="form__small-radio-label">Male</label>
                 <input
-                  type="text"
-                  id="name"
-                  class="form__input"
-                  placeholder="First Name"
-                  required
+                  type="radio"
+                  id="gender"
+                  class="form__radio-input"
+                  name="size"
+                />
+                <label for="gender" class="form__small-radio-label"
+                  >Female</label
+                >
+                <input
+                  type="radio"
+                  id="gender"
+                  class="form__radio-input"
+                  name="size"
+                />
+                <label for="gender" class="form__small-radio-label"
+                  >Other</label
+                >
+                <input
+                  type="radio"
+                  id="gender"
+                  class="form__radio-input"
+                  name="size"
                 />
               </div>
-              <div class="form__group">
-                <label for="name" class="form__label">Last name</label>
+            </div>
+            <div class="form__group">
+              <label for="birthdate" class="form__label"> Birth Date</label>
+              <input
+                type="date"
+                id="birthdate"
+                class="form__input"
+                placeholder=""
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="club" class="form__label">
+                Running Club (if any)</label
+              >
+              <input type="text" id="club" class="form__input" placeholder="" />
+            </div>
+            <div class="form__group">
+              <div class="form__radio-group">
+                <label for="medical" class="form__radio-label">
+                  <span class="form__radio-button"></span>
+                  Do you suffer from any medical conditions?
+                </label>
+
+                <label for="medical" class="form__small-radio-label">Yes</label>
                 <input
-                  type="text"
-                  id="name"
-                  class="form__input"
-                  placeholder="Last Name"
-                  required
+                  type="radio"
+                  id="medical"
+                  class="form__radio-input"
+                  name="size"
+                />
+                <label for="medical" class="form__small-radio-label">No</label>
+                <input
+                  type="radio"
+                  id="medical"
+                  class="form__radio-input"
+                  name="size"
                 />
               </div>
-              <div class="form__group">
-                <label for="email" class="form__label"> Email address</label>
+            </div>
+            <div class="form__group">
+              <div class="form__radio-group">
+                <label for="companion" class="form__radio-label">
+                  <span class="form__radio-button"></span>
+                  Are you bringing a companion along ?
+                </label>
+
+                <label for="companion" class="form__small-radio-label"
+                  >Yes</label
+                >
                 <input
-                  type="email"
-                  id="email"
-                  class="form__input"
-                  placeholder="Email address"
-                  required
+                  type="radio"
+                  id="companion"
+                  class="form__radio-input"
+                  name="size"
+                />
+                <label for="companion" class="form__small-radio-label"
+                  >No</label
+                >
+                <input
+                  type="radio"
+                  id="companion"
+                  class="form__radio-input"
+                  name="size"
                 />
               </div>
-              <div class="form__group">
-                <label for="phone" class="form__label"> Phone-number </label>
+            </div>
+            <div class="form__group">
+              <label for="companion__name" class="form__label"
+                >Your Companion's Name</label
+              >
+              <input
+                type="text"
+                id="companion__name"
+                class="form__input"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <input
+                type="text"
+                id="companion__name"
+                class="form__input"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <div class="form__radio-group">
+                <label for="gender" class="form__radio-label">
+                  <span class="form__radio-button"></span>
+                  Your Companion's Gender</label
+                >
+
+                <label for="gender" class="form__small-radio-label">Male</label>
                 <input
-                  type="text"
-                  id="phone"
-                  class="form__input"
-                  placeholder="### ### ####"
-                  required
+                  type="radio"
+                  id="gender"
+                  class="form__radio-input"
+                  name="size"
+                />
+                <label for="gender" class="form__small-radio-label"
+                  >Female</label
+                >
+                <input
+                  type="radio"
+                  id="gender"
+                  class="form__radio-input"
+                  name="size"
+                />
+                <label for="gender" class="form__small-radio-label"
+                  >Other</label
+                >
+                <input
+                  type="radio"
+                  id="gender"
+                  class="form__radio-input"
+                  name="size"
                 />
               </div>
+            </div>
 
-              <div class="form__group u-margin-bottom-medium">
-                <div class="form__radio-group">
-                  <label for="gender" class="form__radio-label">
-                    <span class="form__radio-button"></span>
-                    Gender</label
-                  >
+            <div class="form__button">
+              <button class="main-btn">Next Step &rarr;</button>
+            </div>
+          </form>
+        </div>
+      </section>
 
-                  <label for="gender" class="form__small-radio-label">Male</label>
-                  <input
-                    type="radio"
-                    id="gender"
-                    class="form__radio-input"
-                    name="size"
-                  />
-                  <label for="gender" class="form__small-radio-label">Female</label>
-                  <input
-                    type="radio"
-                    id="gender"
-                    class="form__radio-input"
-                    name="size"
-                  />
-                  <label for="gender" class="form__small-radio-label">Other</label>
-                  <input
-                    type="radio"
-                    id="gender"
-                    class="form__radio-input"
-                    name="size"
-                  />
-                </div>
-                <div class="form__group">
-                  <label for="birthdate" class="form__label"> Birth Date</label>
-                  <input
-                    type="date"
-                    id="birthdate"
-                    class="form__input"
-                    placeholder=""
-                    required
-                  />
-                </div>
-                <div class="form__group">
-                  <label for="club" class="form__label">
-                    Running Club (if any)</label
-                  >
-                  <input
-                    type="text"
-                    id="club"
-                    class="form__input"
-                    placeholder=""
-                  />
-                </div>
+      <section class="faq">
+        <h1
+          class="
+            heading-primary
+            heading-highlight--primary
+            u-margin-bottom-medium
+          "
+        >
+          Frequently Asked Questions
+        </h1>
+        <div class="faq__container">
+          <div class="faq__item active">
+            <h3 class="faq__title">Why shouldn't we trust atoms ?</h3>
 
-                <div class="form__radio-group">
-                  <label for="medical" class="form__radio-label">
-                    <span class="form__radio-button"></span>
-                    Do you suffer from any medical conditions?
-                  </label>
+            <p class="faq__text">They make up everything.</p>
 
-                  <label for="medical" class="form__small-radio-label">Yes</label>
-                  <input
-                    type="radio"
-                    id="medical"
-                    class="form__radio-input"
-                    name="size"
-                  />
-                  <label for="medical" class="form__small-radio-label">No</label>
-                  <input
-                    type="radio"
-                    id="medical"
-                    class="form__radio-input"
-                    name="size"
-                  />
-                </div>
-                <div class="form__radio-group">
-                  <label for="companion" class="form__radio-label">
-                    <span class="form__radio-button"></span>
-                    Are you bringing a companion along ?
-                  </label>
+            <button class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
 
-                  <label for="companion" class="form__small-radio-label">Yes</label>
-                  <input
-                    type="radio"
-                    id="companion"
-                    class="form__radio-input"
-                    name="size"
-                  />
-                  <label for="companion" class="form__small-radio-label">No</label>
-                  <input
-                    type="radio"
-                    id="companion"
-                    class="form__radio-input"
-                    name="size"
-                  />
-                </div>
-                <div class="form__group">
-                  <label for="companion__name" class="form__label"
-                    >Your Companion's Name</label
-                  >
-                  <input
-                    type="text"
-                    id="companion__name"
-                    class="form__input"
-                    placeholder="First Name"
-                    required
-                  />
-                </div>
-                <div class="form__group">
-                  <input
-                    type="text"
-                    id="companion__name"
-                    class="form__input"
-                    placeholder="Last Name"
-                    required
-                  />
-                </div>
-                <div class="form__radio-group">
-                  <label for="gender" class="form__radio-label">
-                    <span class="form__radio-button"></span>
-                    Your Companion's Gender</label
-                  >
+          <div class="faq__item">
+            <h3 class="faq__title">
+              What do you call someone with no body and no nose ?
+            </h3>
 
-                  <label for="gender" class="form__small-radio-label">Male</label>
-                  <input
-                    type="radio"
-                    id="gender"
-                    class="form__radio-input"
-                    name="size"
-                  />
-                  <label for="gender" class="form__small-radio-label">Female</label>
-                  <input
-                    type="radio"
-                    id="gender"
-                    class="form__radio-input"
-                    name="size"
-                  />
-                  <label for="gender" class="form__small-radio-label">Other</label>
-                  <input
-                    type="radio"
-                    id="gender"
-                    class="form__radio-input"
-                    name="size"
-                  />
+            <p class="faq__text">Nobody knows.</p>
 
+            <button class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
 
+          <div class="faq__item">
+            <h3 class="faq__title">
+              What's the object-oriented way to become wealthy ?
+            </h3>
+            <p class="faq__text">Inheritance.</p>
 
-              </div>
+            <button class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
 
-              <div class="form__button">
-                <button class="main-btn">Next Step &rarr;</button>
-              </div>
-            </form>
-      </div>
+          <div class="faq__item">
+            <h3 class="faq__title">
+              How many tickles does it take to tickle an octopus ?
+            </h3>
+
+            <p class="faq__text">Ten-tickles!</p>
+
+            <button class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div class="faq__item">
+            <h3 class="faq__title">What is: 1 + 1 ?</h3>
+            <p class="faq__text">Depends on who you are asking.</p>
+
+            <button class="faq__toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
-
 
     <section class="section--register">
       <div class="section--register__title">
         <div class="section__register__header__wrapper">
-        <h3 class="section--register__header">
-          "Of all the races, there is no better stage for heroism than a marathon!"
-        </h3>
+          <h3 class="section--register__header">
+            "Of all the races, there is no better stage for heroism than a
+            marathon!"
+          </h3>
+        </div>
       </div>
-      </div>
-      <button class="section--register__btn btn--show-modal">Sign up for free!</button>
+      <button class="section--register__btn btn--show-modal">
+        Sign up for free!
+      </button>
     </section>
 
     <footer class="footer">
@@ -492,15 +838,33 @@
           <a href="#" class="footer__link">Our Team</a>
         </li>
       </ul>
-      <img src="img/logo-white.png" alt="logo" class="footer__logo"> 
+      <img src="img/logo-white.png" alt="logo" class="footer__logo" />
       <div class="footer__social">
         <ul class="footer__social__list">
-          <li class="footer__social__list__item">  <a href="#" class="footer__social__list__link">Twitter</a> </li>
-          <li class="footer__social__list__item"> <a href="#" class="footer__social__list__link">Facebook</a></li>
-          <li class="footer__social__list__item"> <a href="#" class="footer__social__list__link">Youtube</a></li>
-          <li class="footer__social__list__item"> <a href="#" class="footer__social__list__link">Instagram</a></li>
+          <li class="footer__social__list__item">
+            <a href="#" class="footer__social__list__link">Twitter</a>
+          </li>
+          <li class="footer__social__list__item">
+            <a href="#" class="footer__social__list__link">Facebook</a>
+          </li>
+          <li class="footer__social__list__item">
+            <a href="#" class="footer__social__list__link">Youtube</a>
+          </li>
+          <li class="footer__social__list__item">
+            <a href="#" class="footer__social__list__link">Instagram</a>
+          </li>
         </ul>
       </div>
     </footer>
+
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

@@ -1,3 +1,87 @@
+"use strict";
+
+// IMAGE CAROUSEL COMPONENT //////////////////
+
+const imgs = document.getElementById("imgs");
+
+const leftBtn = document.getElementById("left");
+const rightBtn = document.getElementById("right");
+
+// Node list
+const img = document.querySelectorAll("#imgs img");
+
+let i = 0;
+
+let interval = setInterval(run, 4500);
+
+function run() {
+  i++;
+  changeImage();
+}
+
+function changeImage() {
+  if (i > img.length - 1) {
+    i = 0;
+  } else if (i < 0) {
+    i = img.length - 1;
+  }
+  imgs.style.transform = `translateX(${-i * 48}rem)`;
+}
+
+function resetInterval() {
+  clearInterval(interval);
+  interval = setInterval(run, 3500);
+}
+
+rightBtn.addEventListener("click", () => {
+  i++;
+  changeImage();
+  resetInterval();
+});
+leftBtn.addEventListener("click", () => {
+  i--;
+  changeImage();
+  resetInterval();
+});
+
+// VERTICAL SWITCHER COMPONENT //////////////////////
+
+const switcherContainer = document.querySelector(".switcher-container");
+const switchRight = document.querySelector(".right-switch");
+const switchLeft = document.querySelector(".left-switch");
+const upButton = document.querySelector(".up-button");
+const downButton = document.querySelector(".down-button");
+const switchesLength = switchRight.querySelectorAll("div").length;
+
+let activeSwitchIndex = 0;
+
+switchLeft.style.top = `-${(switchesLength - 1) * 100}vh`;
+
+upButton.addEventListener("click", () => changeSwitch("up"));
+downButton.addEventListener("click", () => changeSwitch("down"));
+
+const changeSwitch = (direction) => {
+  const switcherHeight = switcherContainer.clientHeight;
+  if (direction === "up") {
+    activeSwitchIndex++;
+    if (activeSwitchIndex > switchesLength - 1) {
+      activeSwitchIndex = 0;
+    }
+  } else if (direction === "down") {
+    activeSwitchIndex--;
+    if (activeSwitchIndex < 0) {
+      activeSwitchIndex = switchesLength - 1;
+    }
+  }
+
+  switchRight.style.transform = `translateY(-${
+    activeSwitchIndex * switcherHeight
+  }px)`;
+  switchLeft.style.transform = `translateY(${
+    activeSwitchIndex * switcherHeight
+  }px)`;
+};
+
 // ABOUT-RULES ELEMENTS - Tabbed Components
 const tabs = document.querySelectorAll(".rules__tab");
 const tabsContainer = document.querySelector(".rules__tab-container");
@@ -110,3 +194,22 @@ const slider = function () {
 };
 
 slider();
+
+// FAQ Toggle
+
+("use strict");
+
+/*
+ *  -> bring in toggle buttons (querySelectorAll)
+ *  -> loop through nodelist (forEach)
+ *  -> add click event (addEventListener)
+ *  -> Toggle the active class on the parent node (.parentNode & .classList.toggle())
+ */
+
+const toggleButtons = document.querySelectorAll(".faq__toggle");
+
+toggleButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    button.parentNode.classList.toggle("active");
+  });
+});

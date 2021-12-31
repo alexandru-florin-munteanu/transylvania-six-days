@@ -1,0 +1,89 @@
+.section__switcher {
+  height: 100vh;
+  margin: 4.8rem 0;
+}
+
+.switcher-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  &__button {
+    background-color: $color-grey-light-1;
+    border: none;
+    color: $color-grey-dark-2;
+    height: 4.8rem;
+    width: 4.8rem;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+    &:focus {
+      outline: none;
+    }
+    &:hover,
+    &:active {
+      color: $color-grey-dark-3;
+      background-color: $color-white;
+      cursor: pointer;
+      box-shadow: 0 0.8rem 0.6rem rgba($color-grey-dark-2, $alpha: 0.3);
+    }
+  }
+
+  & .action-buttons {
+    & button {
+      position: absolute;
+      left: 35%;
+      top: 50%;
+      z-index: 100;
+    }
+    & .down-button {
+      transform: translateX(-100%);
+    }
+    & .up-button {
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.left-switch {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+
+  & > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+  }
+
+  & h1 {
+    font-size: 4.2rem;
+    margin-bottom: 1.2rem;
+    margin-top: -3.2rem;
+  }
+}
+
+.right-switch {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+
+  & > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+  }
+}

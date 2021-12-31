@@ -3,24 +3,30 @@
   height: 100vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-black, 0.6),
-      rgba($color-black, 0.7)
+      rgba($color-grey-light-1, 0.7),
+      rgba($color-grey-light-2, 0.8)
     ),
-    url("../img/hero.jfif");
+    url("../img/isaac-wendland-7DCZgKyp8vw-unsplash.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: end;
   position: relative;
-}
 
-.hero {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  transform: translateX(-50%);
-
-  &__text {
-    font-size: 1.8rem;
-    letter-spacing: 0.2rem;
+  &__logo-box {
+    position: relative;
+    top: 4.8rem;
+    left: 9%;
+  }
+  &__logo {
+    height: 10.8rem;
+  }
+  &__text-box {
+    font-size: 2.4rem;
+    color: $color-grey-dark-3;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
   }
 
   &__heading {
@@ -41,11 +47,11 @@
       position: relative;
       display: block;
       width: calc(135% + 1.3px);
-      height: 96px;
+      height: 12.4rem;
       transform: rotateY(180deg);
     }
     & .shape-fill {
-      fill: $color-grey-light-1;
+      fill: $color-white;
     }
   }
 }
